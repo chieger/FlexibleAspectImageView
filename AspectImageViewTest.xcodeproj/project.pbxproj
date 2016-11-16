@@ -14,6 +14,7 @@
 		ECD60DF21DDCCA9700BD2E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD60DF01DDCCA9700BD2E15 /* LaunchScreen.storyboard */; };
 		ECD60DFD1DDCCA9700BD2E15 /* AspectImageViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD60DFC1DDCCA9700BD2E15 /* AspectImageViewTestTests.swift */; };
 		ECD60E081DDCCA9700BD2E15 /* AspectImageViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD60E071DDCCA9700BD2E15 /* AspectImageViewTestUITests.swift */; };
+		ECD60E171DDCCAC700BD2E15 /* FlexibleAspectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD60E161DDCCAC700BD2E15 /* FlexibleAspectImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ECD60E031DDCCA9700BD2E15 /* AspectImageViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AspectImageViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD60E071DDCCA9700BD2E15 /* AspectImageViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectImageViewTestUITests.swift; sourceTree = "<group>"; };
 		ECD60E091DDCCA9700BD2E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD60E161DDCCAC700BD2E15 /* FlexibleAspectImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleAspectImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		ECD60DE61DDCCA9700BD2E15 /* AspectImageViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				ECD60E151DDCCAB200BD2E15 /* Views */,
 				ECD60DE71DDCCA9700BD2E15 /* AppDelegate.swift */,
 				ECD60DE91DDCCA9700BD2E15 /* ViewController.swift */,
 				ECD60DEB1DDCCA9700BD2E15 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				ECD60E091DDCCA9700BD2E15 /* Info.plist */,
 			);
 			path = AspectImageViewTestUITests;
+			sourceTree = "<group>";
+		};
+		ECD60E151DDCCAB200BD2E15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECD60E161DDCCAC700BD2E15 /* FlexibleAspectImageView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD60E171DDCCAC700BD2E15 /* FlexibleAspectImageView.swift in Sources */,
 				ECD60DEA1DDCCA9700BD2E15 /* ViewController.swift in Sources */,
 				ECD60DE81DDCCA9700BD2E15 /* AppDelegate.swift in Sources */,
 			);
@@ -514,6 +526,7 @@
 				ECD60E0E1DDCCA9700BD2E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD60E0F1DDCCA9700BD2E15 /* Build configuration list for PBXNativeTarget "AspectImageViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				ECD60E111DDCCA9700BD2E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD60E121DDCCA9700BD2E15 /* Build configuration list for PBXNativeTarget "AspectImageViewTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				ECD60E141DDCCA9700BD2E15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
