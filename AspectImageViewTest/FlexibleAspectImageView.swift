@@ -78,6 +78,28 @@ extension FlexibleAspectImageView {
             setFlexibleAspectFill()
         }
     }
+
+    func setFlexibleAspectFit(animated: Bool, duration: Double? = nil) {
+        if animated {
+            let duration = duration ?? 0.4
+            UIView.animate(withDuration: duration) {
+                self.setFlexibleAspectFit()
+            }
+        } else {
+            setFlexibleAspectFit()
+        }
+    }
+
+    func setFlexibleAspectFill(animated: Bool, duration: Double? = nil) {
+        if animated {
+            let duration = duration ?? 0.4
+            UIView.animate(withDuration: duration) {
+                self.setFlexibleAspectFill()
+            }
+        } else {
+            setFlexibleAspectFill()
+        }
+    }
 }
 
 extension UIView {
