@@ -17,50 +17,124 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="300" id="BMF-Mn-N9N">
-                                <rect key="frame" x="31" y="532" width="297" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="d54-US-tkv"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="300" id="dhQ-oz-gDu">
-                                <rect key="frame" x="31" y="608" width="297" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="didAdjustOrigin:" destination="BYZ-38-t0r" eventType="valueChanged" id="GI8-mG-7PU"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="300" id="idg-y4-XkU">
-                                <rect key="frame" x="31" y="570" width="297" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="didAdjustHeight:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ubi-vi-5jE"/>
-                                </connections>
-                            </slider>
                             <view contentMode="scaleToFill" misplaced="YES" id="ys3-yw-Dw4" customClass="FlexibleAspectImageView" customModule="AspectImageViewTest" customModuleProvider="target">
-                                <rect key="frame" x="132" y="80" width="189" height="151"/>
+                                <rect key="frame" x="0.0" y="105" width="182" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36470588240000001" green="0.73725490199999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="wedding1"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexibleAspectFit" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ywb-kn-Xmq" appends="YES" id="eoE-qk-Fy0"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="C33-wU-Nm8" customClass="FlexibleAspectImageView" customModule="AspectImageViewTest" customModuleProvider="target">
+                                <rect key="frame" x="193" y="105" width="182" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="kingsley_cafe_racer"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexibleAspectFit" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mp6-Ze-vUa" appends="YES" id="hrg-cR-UF6"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="du4-Fx-ZES" customClass="FlexibleAspectImageView" customModule="AspectImageViewTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="260" width="182" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="wedding3"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexibleAspectFit" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hnw-1b-RL4" appends="YES" id="3ca-47-HAa"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="w7j-T3-Fs4" customClass="FlexibleAspectImageView" customModule="AspectImageViewTest" customModuleProvider="target">
+                                <rect key="frame" x="193" y="260" width="182" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="wedding4"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexibleAspectFit" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="503-cV-a5D" appends="YES" id="k06-Ou-r8D"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="w80-S7-B89" customClass="FlexibleAspectImageView" customModule="AspectImageViewTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="415" width="182" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="wedding5"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexibleAspectFit" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0cq-nb-KyI" appends="YES" id="WHT-2B-Zn1"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="3HH-aN-KP0" customClass="FlexibleAspectImageView" customModule="AspectImageViewTest" customModuleProvider="target">
+                                <rect key="frame" x="193" y="415" width="182" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="wedding2"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexibleAspectFit" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexibleAspectFit" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IaY-ut-D96" appends="YES" id="SVJ-NB-fr7"/>
+                                </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.88235294119999996" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <connections>
-                        <outlet property="aspectImageView" destination="ys3-yw-Dw4" id="DIE-7U-Yv8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ywb-kn-Xmq">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="2ld-fk-Qhu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mp6-Ze-vUa">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="OCk-pb-WuE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hnw-1b-RL4">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="bw2-fq-W7N"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="503-cV-a5D">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="FMJ-Xc-Gsu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0cq-nb-KyI">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="OZf-8z-PVE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="IaY-ut-D96">
+                    <connections>
+                        <action selector="didTapImage:" destination="BYZ-38-t0r" id="ZAl-2u-KPE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-429.5" y="68.5"/>
+            <point key="canvasLocation" x="-309" y="11"/>
         </scene>
     </scenes>
     <resources>
+        <image name="kingsley_cafe_racer" width="293" height="293"/>
+        <image name="wedding1" width="320" height="480"/>
         <image name="wedding2" width="480" height="320"/>
+        <image name="wedding3" width="480" height="320"/>
+        <image name="wedding4" width="480" height="320"/>
+        <image name="wedding5" width="480" height="320"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
