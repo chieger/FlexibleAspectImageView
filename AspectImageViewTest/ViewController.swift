@@ -10,40 +10,46 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var aspectImageView: FlexibleAspectImageView!
+    enum Toggle {
+        case on
+        case off
+    }
 
-    var originalFrame: CGRect!
+    var effectView: UIVisualEffectView!
+    var thumbNailFrame: CGRect!
+    var toggle: Toggle = .off
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        originalFrame = aspectImageView.frame
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBAction func didTapImage(_ sender: UITapGestureRecognizer) {
+        let imageView = sender.view as! FlexibleAspectImageView
 
-    @IBAction func slider(_ sender: UISlider) {
-
-        let value = CGFloat(sender.value)
-
-        aspectImageView.frame.size.width = originalFrame.size.width + value
-    }
-
-
-    @IBAction func didAdjustHeight(_ sender: UISlider) {
-        let value = CGFloat(sender.value)
-
-        aspectImageView.frame.size.height = originalFrame.size.height + value
-
-    }
-
-    @IBAction func didAdjustOrigin(_ sender: UISlider) {
-        let value = CGFloat(sender.value)
-
-        aspectImageView.frame.origin = CGPoint(x: originalFrame.origin.x + value, y: originalFrame.origin.y + value)
-
-
+        switch toggle {
+        case .off:
+            toggle = .on
+            thumbNailFrame = imageView.frame
+            let fullScreenFrame = view.frame
+            effectView = UIVisualEffectView()
+            effectView.frame = view.bounds
+            view.addSubview(effectView)
+            view.bringSubview(toFront: imageView)
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: { 
+                imageView.frame = fullScreenFrame
+                imageView.setFlexibleAspectFit()
+                self.effectView.effect = UIBlurEffect(style: .dark)
+            }, completion: nil)
+        case .on:
+            toggle = .off
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: { 
+                imageView.frame = self.thumbNailFrame
+                imageView.setFlexibleAspectFill()
+                self.effectView.effect = nil
+            }, completion: { (Bool) in
+                self.effectView.removeFromSuperview()
+            })
+        }
     }
 }
 
